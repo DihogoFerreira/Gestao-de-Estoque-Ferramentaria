@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleindex.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="login">
+        <form class="card" action="php/index.php" method="post">
+            <div class="card-header">
+                <h2>Login</h2>
+            </div>
+            <div class="card-content">
+                <div class="card-content-area">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="nmat" id="usuario" autocomplete="off" placeholder="Digite seu usuário"
+                        required>
+                </div>
+                <div class="card-content-area">
+                    <label for="password">Senha</label>
+                    <input type="password" name="senha" id="password" autocomplete="off" placeholder="Digite sua senha"
+                        required>
+                </div>
+            </div>
+            <div class="card-footer">
+                <input type="submit" name="logar" value="Entrar" class="submit">
+                <a href="registro.html">Registre-se aqui.</a>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
