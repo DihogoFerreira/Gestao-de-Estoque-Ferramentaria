@@ -1,0 +1,84 @@
+body {
+    background-image: url('../Img/img_home.jpg');
+    background-size: 100%;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.5);
+    min-height: auto;
+}
+
+.form-container h1 {
+    text-align: center;
+}
+
+.form-container {
+    background-color: white;
+    /* Adiciona uma cor de fundo para visualizar melhor (MUDAR ESSA COR) */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Adiciona uma sombra para destacar o formulário */
+    margin: 0 auto;
+    max-width: 80%;
+    /* Define uma largura máxima para telas menores */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    min-height: 100vh;
+    /* Ocupa toda a altura da viewport */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* Garante que os campos ocupem toda a largura disponível */
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    text-align: left;
+    /* Alinha o label à esquerda */
+}
+
+.form-group input {
+    width: 100%;
+    /* Garante que os inputs ocupem toda a largura disponível */
+    font-size: 14px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+    align-items: flex-start;
+}
+
+/* Botões com cores diferentes */
+.btn-primary {
+    background-color: #2cf057;
+    /* Verde */
+}
+
+.btn-secondary {
+    background-color: red;
+    /* Vermelho */
+}
+
+.button-container {
+    display: flex;
+    gap: 30px;
+    /* Espaça os botões */
+    margin: 10px 105px;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+}
